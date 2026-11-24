@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Утренний Бриз ☕</title>
+<style>
+body{font-family:sans-serif;background:#f4eada;color:#2b1d12;margin:0;padding:20px}
+.hero{text-align:center;padding:40px 20px;background:linear-gradient(135deg,#8B6F47,#D4A574);color:#fff;border-radius:20px;margin-bottom:30px}
+.hero .visual{font-size:8em;margin:20px 0}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:0 auto}
+.card{background:#fff;border-radius:15px;padding:20px;width:280px;box-shadow:0 4px 15px rgba(0,0,0,.1);text-align:center;display:flex;flex-direction:column;align-items:center}
+.visual{height:200px;width:100%;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:8em;background:linear-gradient(135deg,#fff3e0,#ffe0b2);margin-bottom:15px}
+.tg-btn{display:block;margin-top:15px;padding:12px 20px;background:#0088cc;color:#fff;text-decoration:none;border-radius:8px;font-weight:bold;transition:0.3s;width:100%;box-sizing:border-box;text-align:center}
+.tg-btn:hover{background:#006699;transform:translateY(-2px)}
+.reviews{max-width:1000px;margin:40px auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.review{background:#fff;border-radius:15px;padding:20px;width:300px;box-shadow:0 4px 15px rgba(0,0,0,.1);font-style:italic}
+.review-author{font-weight:bold;margin-top:10px;font-style:normal;color:#666}
+.form-section{max-width:500px;margin:40px auto;background:#fff;padding:30px;border-radius:20px;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.form-section h2{text-align:center;margin-bottom:20px}
+.form-section input,.form-section select,.form-section textarea{width:100%;padding:12px;margin:8px 0;border:2px solid #d8c6ac;border-radius:10px;font-size:16px;box-sizing:border-box}
+.form-section button{width:100%;padding:15px;background:linear-gradient(135deg,#8B6F47,#D4A574);color:#fff;border:none;border-radius:10px;font-size:18px;cursor:pointer;font-weight:bold;margin-top:10px}
+.form-section button:hover{opacity:0.9}
+#petBtn{position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:#ff4757;border:none;font-size:28px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+</style></head><body>
+<div class="hero"><h1>Утренний Бриз</h1><p>Кофе, который будит лучше будильника. Топ-вайб!</p><div class="visual">☕</div></div>
+<div class="cards">
+<div class="card"><div class="visual">🥛</div><h3>Лате Сирена</h3><p>Нежная пена, двойной эспрессо — имба для утра, без базара! ☕</p><b>250 ₽</b><a href="https://t.me/GSlavaX?text=Привет!%20Хочу%20заказать%20Лате%20Сирена" class="tg-btn" target="_blank">🚀 Заказать в Telegram</a></div>
+<div class="card"><div class="visual">🍮</div><h3>Круассан с медом</h3><p>Хрустящая корочка, сладкая начинка. Идеальная пара для кофе, топ!</p><b>150 ₽</b><a href="https://t.me/GSlavaX?text=Привет!%20Хочу%20заказать%20Круассан%20с%20медом" class="tg-btn" target="_blank">🚀 Заказать в Telegram</a></div>
+<div class="card"><div class="visual">🌿</div><h3>Мятный чай</h3><p>Свежесть как после душа. Для тех, кто на диете или просто любит зелень. Пушка!</p><b>180 ₽</b><a href="https://t.me/GSlavaX?text=Привет!%20Хочу%20заказать%20Мятный%20чай" class="tg-btn" target="_blank">🚀 Заказать в Telegram</a></div>
+</div>
+<div class="reviews">
+<h2 style="width:100%;text-align:center">💬 Отзывы наших клиентов</h2>
+<div class="review">"Пришел сонный, ушел космонавт. Кофе просто пушка, бариста топ!"<div class="review-author">— Дима ⭐⭐⭐⭐⭐</div></div>
+<div class="review">"Лате тут — имба! Ни одной лишней капли. Буду ходить только сюда."<div class="review-author">— Света ⭐⭐⭐⭐⭐</div></div>
+<div class="review">"Атмосфера как в кино, только дешевле и вкуснее. Без базара!"<div class="review-author">— Игорь ⭐⭐⭐⭐⭐</div></div>
+</div>
+<div class="form-section">
+<h2>📩 Оставить заявку</h2>
+<form action="https://cyber-prorab-bot.onrender.com/submit_lead" method="POST">
+<input name="name" placeholder="Ваше имя" required>
+<input name="phone" placeholder="Телефон (+7...)" pattern="[\+]?[0-9\s\-\(\)]{10,}" required>
+<input name="email" type="email" placeholder="Email (необязательно)">
+<select name="product" required>
+<option value="">-- Что вас интересует? --</option>
+<option value="Лате Сирена">Лате Сирена — 250 ₽</option>
+<option value="Круассан с медом">Круассан с медом — 150 ₽</option>
+<option value="Мятный чай">Мятный чай — 180 ₽</option>
+<option value="Другое">Другое</option>
+</select>
+<textarea name="comment" placeholder="Комментарий (необязательно)" rows="3"></textarea>
+<button type="submit">🚀 Отправить заявку</button>
+</form>
+</div>
+<footer style="text-align:center;margin-top:40px;padding:20px;color:#666">
+<h3>📞 Контакты</h3><p>📍 ул. Кофейная, 1</p><p>📱 +7 (999) 123-45-67</p><p>✉️ hello@morningbreeze.ru</p><p>🕒 07:00 - 22:00</p>
+</footer>
+<button id="petBtn">🐉</button>
+<script>const b=document.getElementById('petBtn');b.onmouseover=()=>{b.style.left=Math.random()*(innerWidth-70)+'px';b.style.top=Math.random()*(innerHeight-70)+'px'}</script>
+</body></html>
